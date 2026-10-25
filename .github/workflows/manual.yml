@@ -1,7 +1,7 @@
 name: manual
 on:
   workflow_dispatch:
-    input:
+    inputs:
       greeting:
       type: string
       default: Hello
@@ -11,4 +11,4 @@ jobs:
   runs:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "${{ input.greeting }}"
+      - run: echo "${{ inputs.greeting }}"
